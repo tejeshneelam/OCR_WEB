@@ -1,3 +1,4 @@
+// npm start
 import React, { useState } from 'react';
 import axios from 'axios';
 import '../styles/style.css';
@@ -72,5 +73,13 @@ const OCRUploader = () => {
     </div>
   );
 };
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+// or process.env.REACT_APP_BACKEND_URL
+
+const res = await axios.post(
+  `${BACKEND_URL}/api/translate?model=${model}`,
+  formData
+);
+
 
 export default OCRUploader;
