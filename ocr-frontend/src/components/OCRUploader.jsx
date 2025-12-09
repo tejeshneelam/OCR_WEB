@@ -73,8 +73,7 @@ const OCRUploader = () => {
     </div>
   );
 };
-const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
-// or process.env.REACT_APP_BACKEND_URL
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 
 const res = await axios.post(
   `${BACKEND_URL}/api/translate?model=${model}`,
