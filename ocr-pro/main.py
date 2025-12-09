@@ -1,3 +1,4 @@
+ ##uvicorn main:app --reload
 from fastapi import FastAPI, File, UploadFile, Query
 from fastapi.middleware.cors import CORSMiddleware
 from transformers import (
@@ -23,8 +24,10 @@ origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "http://localhost:5174",
-    "http://127.0.0.1:5174"
+    "http://127.0.0.1:5174",
+    "https://YOUR-VERCEL-URL.vercel.app"  # add later
 ]
+
 
 app.add_middleware(
     CORSMiddleware,

@@ -1,0 +1,22 @@
+# ---- FastAPI & Server ----
+fastapi
+uvicorn[standard]
+python-multipart
+
+# ---- Deep Learning / Transformers ----
+torch
+torchvision
+transformers
+sentencepiece
+
+# ---- Image Processing ----
+Pillow
+opencv-python
+numpy
+
+# ---- OCR Libraries ----
+easyocr
+pytesseract
+
+# ---- Utilities ----
+tqdm
